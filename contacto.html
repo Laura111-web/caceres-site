@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="descripción" content=" Contacto">
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1><br>
+        <nav>
+            <!---- inicio de una lista no ordenada --->
+            <ul>
+                <!---- nuevas entradas en la lista--->
+                <!---- ir de una pagina a otra y el atributo indica la url --->
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="tradiciones.html">Tradiciones</a></li>
+                <li><a href="datosEstadisticos.html">Datos Estadísticos</a></li>
+                <li><a href="informacionTuristica.html">Información Turística</a></li>
+                <li><a href="contenidoMultimedia.html">Contenido Multimedia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!---- imagen --->
+        <img src="imagenPortada.jpg" height="235" width="400" align="right" />
+        <section>
+            <h2>Formulario de Contacto</h2><br>
+            <form action="procesar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br></br>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo"><br></br>
+                <label>Motivo de contacto:</label>
+                <input type="radio" name="motivo" value="consulta"> Consulta
+                <input type="radio" name="motivo" value="sugerencia"> Sugerencia
+                <input type="radio" name="motivo" value="otro"> Otro<br></br>
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios"></textarea><br></br>
+                <label for="newsletter">¿Deseas recibir nuestro boletín?</label>
+                <input type="checkbox" id="newsletter" name="newsletter"><br></br>
+                <label for="interes">¿Qué te interesa?</label>
+                <select id="interes" name="interes">
+                    <option value="turismo">Turismo</option>
+                    <option value="historia">Historia</option>
+                    <option value="cultura">Cultura</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Cáceres. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

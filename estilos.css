@@ -1,0 +1,127 @@
+/* Reset básico 
+*: Este selector afecta a todos los elementos de la página. 
+Es un "reset" básico que elimina el margen y el padding 
+predeterminados de todos los elementos.
+box-sizing: border-box: Cambia el modelo de caja CSS 
+para que el tamaño de un elemento (ancho y alto) 
+incluya su padding y bordes, 
+lo que facilita el control del tamaño de los elementos y 
+evita que se agranden inesperadamente.*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: Arial, sans-serif;: Define la tipografía principal 
+de la página, en este caso Arial. 
+Si Arial no está disponible, se utilizará una fuente 
+sans-serif predeterminada.
+color: #333;: Cambia el color del texto general de la 
+página a un gris oscuro (#333), 
+que es más suave para la vista que el negro puro.
+background-color: #f4f4f4;: Establece un color de fondo 
+gris claro para toda la página (#f4f4f4), 
+lo cual hace que el contenido destaque sin ser 
+agresivo para los ojos.*/
+body {
+    font-family: Calibri Light, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* background-color: #333;: Asigna un fondo gris oscuro 
+para el encabezado, dándole un aspecto sólido y elegante.
+color: #fff;: Cambia el color del texto del encabezado a blanco
+ (#fff), para asegurar un contraste adecuado contra 
+ el fondo oscuro.
+padding: 10px 0;: Añade un poco de espacio arriba y abajo 
+en el encabezado, haciendo que el contenido dentro se vea más 
+espacioso.
+text-align: center;: Centra el texto en el encabezado, 
+haciendo que el título sea más destacable y 
+equilibrado visualmente. */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/*nav ul {}: Estos estilos afectan a la lista <ul> que 
+contiene los elementos de navegación:
+
+list-style: none;: Elimina los puntos de viñeta predeterminados 
+de la lista.
+padding: 0;: Elimina el espacio extra alrededor de la lista.
+text-align: center;: Centra la lista horizontalmente 
+dentro del encabezado.*/
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* nav ul li {}: Afecta a cada elemento <li> de la lista:
+
+display: inline;: Hace que los elementos de la lista 
+se alineen horizontalmente, en lugar de en columna.
+margin-right: 10px;: Añade un pequeño espacio a la derecha 
+de cada enlace para evitar que se vean pegados. */
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/*nav ul li a {}: Afecta a cada enlace dentro 
+de los elementos <li>:
+
+color: #fff;: Cambia el color de los enlaces a blanco 
+para asegurar que contrasten bien con el fondo oscuro.
+text-decoration: none;: Elimina el subrayado predeterminado 
+de los enlaces, haciendo que el diseño sea más limpio.*/
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*background-color: #333; y color: #fff;: 
+El pie de página tiene el mismo color de fondo y color de texto 
+que el encabezado, manteniendo la coherencia visual.
+text-align: center;: Centra el texto del pie de página, 
+haciendo que el contenido se vea simétrico y ordenado.
+padding: 10px 0;: Añade espacio vertical dentro del pie de 
+página, similar al encabezado.
+margin-top: 20px;: Añade un espacio encima del pie de página 
+para separarlo del contenido anterior y darle un respiro visual*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* padding: 20px;: Añade un margen interno (espacio alrededor) 
+al contenido de la sección principal de cada página, 
+evitando que el texto quede pegado a los bordes de la pantalla 
+y mejorando la legibilidad. */
+main {
+    padding: 20px;
+}
+
+h1{
+    color: white;
+}
+
+h2 {
+    color: #333;
+}
+
+h4 {
+    color: #333;
+}
+
+h5 {
+    color: #333;
+}
